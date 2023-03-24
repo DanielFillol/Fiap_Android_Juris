@@ -2,9 +2,10 @@ package br.fiap.acid.juris;
 
 public class JurisData {
 
-    private String id,lawsuit_number, lawsuit_class, lawsuit_judge, lawsuit_city, lawsuit_city_jurisdiction, trial_date, publication_date, secrecy, lawsuit_court, lawsuit_link_pdf_decision, decision_complete, decision_short, lawsuit_court_jurisdiction, juris_type;
+    private Long id;
+    private String lawsuit_number, lawsuit_class, lawsuit_judge, lawsuit_city, lawsuit_city_jurisdiction, trial_date, publication_date, secrecy, lawsuit_court, lawsuit_link_pdf_decision, decision_complete, decision_short, lawsuit_court_jurisdiction, juris_type;
 
-    public JurisData(String id, String lawsuit_number, String lawsuit_class, String lawsuit_judge, String lawsuit_city, String lawsuit_city_jurisdiction, String trial_date, String publication_date, String secrecy, String lawsuit_court, String lawsuit_link_pdf_decision, String decision_complete, String decision_short, String lawsuit_court_jurisdiction, String juris_type){
+    public JurisData(Long id, String lawsuit_number, String lawsuit_class, String lawsuit_judge, String lawsuit_city, String lawsuit_city_jurisdiction, String trial_date, String publication_date, String secrecy, String lawsuit_court, String lawsuit_link_pdf_decision, String decision_complete, String decision_short, String lawsuit_court_jurisdiction, String juris_type){
         this.id = id;
         this.lawsuit_number = lawsuit_number;
         this.lawsuit_class =  lawsuit_class;
@@ -22,7 +23,7 @@ public class JurisData {
         this.juris_type = juris_type;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
